@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>DOM Load Example</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // This code will run when the DOM is fully loaded
+            var body = document.body;
+            body.innerHTML = "DOM load success";
+        });
+    </script>
 </body>
-
 </html>
